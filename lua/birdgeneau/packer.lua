@@ -48,7 +48,12 @@ return require('packer').startup(function(use)
   }
 
   use("folke/zen-mode.nvim")
+  -- Github Copilot:
   use("github/copilot.vim")
+
+  -- Testing a few other plugins:
+  use("scrooloose/nerdtree")
+  use("vim-airline/vim-airline")
 
 end)
 
