@@ -30,8 +30,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Install plugins using Packer:
-# This will open nvim and install all plugins
-# Then it will close nvim
-nvim -c "PackerSync" -c "qa"
+# We do this twice, because the first time it will fail on TSUpdate
+nvim +PackerSync +qall
+nvim +PackerSync +qall
 
 echo "Done. Have fun!"
