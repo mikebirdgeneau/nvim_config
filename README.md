@@ -7,8 +7,7 @@ This repository contains a rolling (live) version of my configuration for Neovim
 To use this configuration, simply run the setup.sh script as follows:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/mikebirdgeneau/nvim_config/main/setup.sh
-| /bin/bash -
+bash <(curl -sSL https://raw.githubusercontent.com/mikebirdgeneau/nvim_config/main/setup.sh)
 ```
 
 This script is designed for use with Fedora (dnf package manager); other OS / Package managers will require
