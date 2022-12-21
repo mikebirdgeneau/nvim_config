@@ -1,4 +1,6 @@
 #!/bin/bash
+#1
+#
 
 # Automatic setup for my nvim configuration
 
@@ -30,8 +32,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Install plugins using Packer:
-# We do this twice, because the first time it will fail on TSUpdate
-nvim +PackerSync +qall
-nvim +PackerSync +qall
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 echo "Done. Have fun!"
