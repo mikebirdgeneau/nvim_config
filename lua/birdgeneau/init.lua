@@ -1,3 +1,4 @@
+require("birdgeneau.packer")
 require("birdgeneau.set")
 require("birdgeneau.remap")
 
