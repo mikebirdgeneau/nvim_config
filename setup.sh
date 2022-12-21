@@ -26,12 +26,12 @@ fi
 
 # Clone my nvim configuration:
 echo "Cloning my nvim configuration..."
-git clone git@github.com:mikebirdgeneau/nvim_config.git ~/.config/nvim > /dev/null 2>&1
+git clone git@github.com:mikebirdgeneau/nvim_config.git ~/.config/nvim
 
 # Install packer.nvim:
 echo "Installing packer.nvim..."
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim > /dev/null 2>&1
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Install plugins using Packer:
 echo "Installing plugins..."
