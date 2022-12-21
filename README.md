@@ -4,15 +4,16 @@ This repository contains a rolling (live) version of my configuration for Neovim
 
 ## Usage
 
+To use this configuration, simply run the setup.sh script as follows:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/mikebirdgeneau/nvim_config/main/setup.sh
+| /bin/bash -
 ```
-# Install ripgrep (adapt to your OS / package manager):
-sudo dnf install ripgrep
-# Clone this repo
-cd ~/.config/ && git clone git@github.com:mikebirdgeneau/nvim_config.git nvim
-# Install Packer (neovim package manager):
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
+
+This script is designed for use with Fedora (dnf package manager); other OS / Package managers will require
+custom configuration.
+
 
 ## Credit & Inspiration
 
